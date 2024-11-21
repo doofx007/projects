@@ -43,6 +43,10 @@ export default function AuthenticatedLayout({ header, children }) {
                                     Projects
                                 </NavLink>
 
+                                <NavLink href={route('events.index', {sort_field: "created_at", sort_direction: "desc"})} active={route().current('events.index')}>
+                                    Event Scheduler
+                                </NavLink>
+
 
 
 
@@ -129,6 +133,11 @@ export default function AuthenticatedLayout({ header, children }) {
                         <ResponsiveNavLink href={route('projects.index', {sort_field: "created_at", sort_direction: "desc"})} active={route().current('projects.index')}>
                             Projects
                         </ResponsiveNavLink>
+
+                        <ResponsiveNavLink href={route('events.index', {sort_field: "created_at", sort_direction: "desc"})} active={route().current('events.index')}>
+                            Projects
+                        </ResponsiveNavLink>
+
 
                     </div>
 

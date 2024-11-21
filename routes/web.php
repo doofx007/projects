@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProvinceController;
 use App\Http\Controllers\RegionController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\EventController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('provinces', ProvinceController::class);
 
     Route::resource('projects', ProjectController::class);
+    Route::resource('events', EventController::class);
 
 
 
